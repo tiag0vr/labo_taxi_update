@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/vanes/CLionProjects/Laboratoires/Labo1_Taxi
+# Install script for directory: D:/PRG1/LABOS/labo_taxi_update
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/vanes/CLionProjects/Laboratoires/Labo1_Taxi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/PRG1/LABOS/labo_taxi_update/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/vanes/CLionProjects/Laboratoires/Labo1_Taxi/cmake-build-debug",
-		"source" : "C:/Users/vanes/CLionProjects/Laboratoires/Labo1_Taxi"
+		"build" : "D:/PRG1/LABOS/labo_taxi_update/cmake-build-debug",
+		"source" : "D:/PRG1/LABOS/labo_taxi_update"
 	},
 	"version" : 
 	{

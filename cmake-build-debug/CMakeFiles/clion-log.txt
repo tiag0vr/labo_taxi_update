@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\vanes\CLionProjects\Laboratoires\Labo1_Taxi -B C:\Users\vanes\CLionProjects\Laboratoires\Labo1_Taxi\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S D:\PRG1\LABOS\labo_taxi_update -B D:\PRG1\LABOS\labo_taxi_update\cmake-build-debug
 -- The C compiler identification is GNU 12.2.0
 -- The CXX compiler identification is GNU 12.2.0
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/vanes/CLionProjects/Laboratoires/Labo1_Taxi/cmake-build-debug
+-- Build files have been written to: D:/PRG1/LABOS/labo_taxi_update/cmake-build-debug

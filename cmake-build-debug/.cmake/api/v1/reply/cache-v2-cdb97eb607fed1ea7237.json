@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/vanes/CLionProjects/Laboratoires/Labo1_Taxi/cmake-build-debug"
+			"value" : "d:/PRG1/LABOS/labo_taxi_update/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/vanes/CLionProjects/Laboratoires/Labo1_Taxi"
+			"value" : "D:/PRG1/LABOS/labo_taxi_update"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1327,7 +1327,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/vanes/CLionProjects/Laboratoires/Labo1_Taxi/cmake-build-debug"
+			"value" : "D:/PRG1/LABOS/labo_taxi_update/cmake-build-debug"
 		},
 		{
 			"name" : "Labo1_Taxi_IS_TOP_LEVEL",
@@ -1351,7 +1351,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/vanes/CLionProjects/Laboratoires/Labo1_Taxi"
+			"value" : "D:/PRG1/LABOS/labo_taxi_update"
 		}
 	],
 	"kind" : "cache",
