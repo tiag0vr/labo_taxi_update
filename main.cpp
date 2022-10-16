@@ -43,7 +43,8 @@ int main() {
 	unsigned short nbreBagages;
 	float distanceParcours;                   // en [km]
 	float vitesseMoyenne;                     // en [km/h]
-   string heureDepart;                            // Heure de départ souhaitée par l'utilisateur
+   unsigned int heureDepart;                 // Heure de départ souhaitée par l'utilisateur
+   unsigned int minutesDepart;               // Minutes de départ souhaitées par l'utilisateur
 
 
 	// Présentation du ticket de caisse à l'utilisateur
@@ -73,7 +74,7 @@ int main() {
         CLEAR_BUF;
         // Ajout de la validation de l'entrée du nombre de bagages
         if (nbreBagages < 0 || nbreBagages > 4){
-           cout << "Cette entrée est invalide !" << endl;
+           cout << "Cette entree est invalide !" << endl;
            END;
         }
 
@@ -82,22 +83,28 @@ int main() {
         CLEAR_BUF;
         // Ajout de la validation de l'entrée de la distance du parcours
         if (distanceParcours < 0 || distanceParcours > 500){
-           cout << "Cette entrée est invalide !" << endl;
+           cout << "Cette entree est invalide !" << endl;
            END;
         }
 
-		  cout << left << setw(W) << " - vitesse   [km/h] [30-120]" << ": ";
+		  cout << left << setw(W) << " - vitesse   [km/h] [30-120] :";
 		  cin >> vitesseMoyenne;
         CLEAR_BUF;
         // Ajout de la validation de la vitesse moyenne
         if (vitesseMoyenne < 30 || vitesseMoyenne > 120){
-           cout << "Cette entrée est invalide !" << endl;
+           cout << "Cette entree est invalide !" << endl;
            END;
         }
 
-        cout << left << setw(W) << " - depart    [hh:mm]" << ": ";
-        cin >> heureDepart;
+        char c; // Caractère pour insérer et ignorer ':'
+        cout << left << setw(W) << " - depart    [hh:mm] : ";
+        cin >> heureDepart >> c >> minutesDepart;
+        //cin.ignore(':');
+        //cin >> minutesDepart;
         CLEAR_BUF;
+
+
+
         ///// A CONTINUER VALIDATION DE L'HEURE DE DEPART
         // Ajout de la validation de l'heure de départ
         if (heureDepart < ? || heureDepart > ?){
