@@ -65,7 +65,6 @@ int main() {
         << left << setw(W) << " - tarif jour" << ": "          // Ajout de l'horaire jour
         << HORAIRE_JOUR << endl;
 
-   // Affichage de la commande de l'utilisateur
    // Ajout des limites des inputs utilisateur et ajout de l'heure de départ
 	cout << endl << "Votre commande" << endl
 		  << "================================" << endl
@@ -87,7 +86,7 @@ int main() {
            END;
         }
 
-		  cout << left << setw(W) << " - vitesse   [km/h] [30-120] :";
+		  cout << left << setw(W) << " - vitesse  [km/h] [30-120] :";
 		  cin >> vitesseMoyenne;
         CLEAR_BUF;
         // Ajout de la validation de la vitesse moyenne
@@ -97,11 +96,11 @@ int main() {
         }
 
         char c; // Caractère pour insérer et ignorer ':'
-        cout << left << setw(W) << " - depart    [hh:mm] : ";
+        cout << left << setw(W) << " - depart  [hh:mm] : ";
         cin >> heureDepart >> c >> minutesDepart;
         CLEAR_BUF;
         // Ajout de la validation de l'heure de départ
-        if (heureDepart < 01 || heureDepart > 24 || minutesDepart < 0 || minutesDepart > 59) {
+        if (heureDepart < 0 || heureDepart > 23 || minutesDepart < 0 || minutesDepart > 59) {
            cout << "Cette entree est invalide !" << endl;
            END;
         }
