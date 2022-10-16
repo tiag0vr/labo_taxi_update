@@ -99,18 +99,13 @@ int main() {
         char c; // Caractère pour insérer et ignorer ':'
         cout << left << setw(W) << " - depart    [hh:mm] : ";
         cin >> heureDepart >> c >> minutesDepart;
-        //cin.ignore(':');
-        //cin >> minutesDepart;
         CLEAR_BUF;
-
-
-
-        ///// A CONTINUER VALIDATION DE L'HEURE DE DEPART
         // Ajout de la validation de l'heure de départ
-        if (heureDepart < ? || heureDepart > ?){
-           cout << "Cette entrée est invalide !" << endl;
+        if (heureDepart < 01 || heureDepart > 24 || minutesDepart < 0 || minutesDepart > 59) {
+           cout << "Cette entree est invalide !" << endl;
            END;
         }
+
 
 	// Calcul du supplément de bagages
 	float suppBagages = SURTAXE_PAR_BAGAGE * nbreBagages;
