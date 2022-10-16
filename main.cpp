@@ -37,8 +37,10 @@ int main() {
    const float TARIF_MIN_NUIT       = 1.6f;        // Ajout de constante pour le tarif nuit
 	const int MIN_PAR_HEURE          = 60;
    const string HORAIRE_JOUR        = "8h00-20h00"; // Ajout de constante pour l'horaire du tarif jour
-	const short P                    = 2;                        // Variable de précision
-	const short W                    = 26;                       // Variable de largeur d'indentation dans le terminal
+	const short P                    = 2;           // Variable de précision
+	const short W                    = 26;          // Variable de largeur d'indentation dans le terminal
+    const short W1                   = 13;          // première variable de largeur de correction de l'affichage
+    const short W2                   = 28;          // deuxième variable de largeur de correction de l'affichage
 
    const int FIN_HORAIRE_NUIT_MIN   = 480;
    const int DEBUT_HORAIRE_NUIT_MIN = 1200;
@@ -160,14 +162,18 @@ int main() {
    // Affichage du ticket
 	cout << fixed << setprecision(P);
 	cout << endl << "Votre ticket" << endl
-		  << "================================" << endl
+		  << "==================================" << endl
 		  << left << setw(W) << " - prise en charge" << ": "
 		  << PRISE_EN_CHARGE << endl
 		  << left << setw(W) << " - supp bagages" << ": "
 		  << suppBagages << endl
-		  << left << setw(W) << " - prix de la course" << ": "
-		  << prixCourse << endl
-		  << " TOTAL : " << total << endl;
+		  << left << setw(W) << " - temps course" << endl
+          << "       " << dureeCourseJour   << "' @ " << setw(W1) <<  TARIF_MIN_JOUR << ": "
+          << prixCourseJour << endl
+          << "       " << dureeCourseNuit  << "' @ " << setw(W1) <<  TARIF_MIN_NUIT << ": "
+          << prixCourseNuit << endl
+          << "-------------------------- ---------" << endl
+          << right << setw(W2) << " TOTAL : " << prixTotalCourse << endl;
 
 	// Fin de programme
 	cout << endl << "Presser ENTER pour quitter";
